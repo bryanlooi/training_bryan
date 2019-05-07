@@ -26,7 +26,7 @@
 			<field binding="event_details.end_date" control="datetimepicker"/>
 			<field binding="event_details.regions"/>
 			<field binding="event_details.category"/>
-
+			<field binding="event_details.programmes"/>
 		</fieldset>
 	</tab>
 </form>

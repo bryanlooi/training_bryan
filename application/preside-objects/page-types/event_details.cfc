@@ -8,5 +8,9 @@ component {
 
 	property name="regions" relationship="many-to-many" relatedTo="region";
 	property name="category" relationship="many-to-one" relatedTo="category";
+	property name="programmes" 
+			 relationship="one-to-many" 
+			 relatedTo="programme" 
+			 relationshipKey="name";
 
 }
