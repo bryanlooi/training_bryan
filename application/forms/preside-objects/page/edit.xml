@@ -1,0 +1,7 @@
+<form>
+	<tab id="main" sortorder="10">
+		<fieldset id="main" sortorder="10">
+			<field sortorder="80" binding="page.bottom_content" />
+		</fieldset>
+	</tab>
+</form>
