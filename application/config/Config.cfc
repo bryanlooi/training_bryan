@@ -16,5 +16,8 @@ component extends="preside.system.config.Config" {
 		settings.ckeditor.defaults.stylesheets.append( "css-layout" );
 
 		settings.features.websiteUsers.enabled = false;
+
+		settings.enum.regions                     = [ "africa", "asia", "carribean", "centralamerica", "europe", "northamerica", "oceania" ]
+
 	}
 }
