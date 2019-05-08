@@ -2,6 +2,7 @@
 * @allowedParentPageTypes event_listing
 */ 
 
+
 component {
 	property name="start_date" type="date" dbtype="datetime" required="true";
 	property name="end_date" type="date" dbtype="datetime" required="true";
@@ -11,6 +12,6 @@ component {
 	property name="programmes" 
 			 relationship="one-to-many" 
 			 relatedTo="programme" 
-			 relationshipKey="name";
+			 relationshipKey="event_detail";
 
 }
