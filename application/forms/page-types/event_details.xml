@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form i18nBaseUri="page-types.event_details:">
+
+	<tab id="main">
+		<fieldset id="main">
+			<!-- add / remove / modify fields in the main tab & fieldset here -->
+		</fieldset>
+	</tab>
+
+	<tab id="meta">
+		<fieldset id="meta">
+			<!-- add / remove / modify fields in the main tab & fieldset here -->
+		</fieldset>
+	</tab>
+
+	<tab id="dates">
+		<fieldset id="dates">
+			<!-- add / remove / modify fields in the main tab & fieldset here -->
+		</fieldset>
+	</tab>
+
+	<tab id="event_details">
+		<fieldset id="event_details_fieldset">
+			<!-- add / remove / modify fields in the main tab & fieldset here -->
+			<field binding="event_details.start_date" control="datetimepicker"/>
+			<field binding="event_details.end_date" control="datetimepicker"/>
+			<field binding="event_details.regions"/>
+			<field binding="event_details.category"/>
+			<field binding="event_details.programmes"/>
+		</fieldset>
+	</tab>
+</form>
