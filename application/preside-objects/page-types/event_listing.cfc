@@ -2,6 +2,7 @@
  * @allowedChildPageTypes event_details
  */
 
+
 component  {
 	property name="featured_event" relationship="many-to-many" relatedto="event_details";
 
