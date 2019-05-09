@@ -61,7 +61,37 @@ component {
 	public query function getFeaturedEvents( limit=3 ) {
 		return _getEventListingDao().selectData(
 			  selectFields = [ "featured_events.id", "featured_events$page.title" ]
+			, maxRows = arguments.limit
 			, orderBy = "event_details__join__event_listing.sort_order"
+		);
+	}
+
+	public query function getRegionRelatedEvents( string region="" ) {
+		// var _filter = "page.id != :args.event_id";
+		// var _filterParams = { "args.event_id" = arguments.event_id };
+
+		var _filter = "";
+		var _filterParams = {};
+
+		if( len(arguments.region) ) {
+			_filter					  &= " AND region.id != :region.id ";
+			_filterParams["region.id"] = arguments.region;
+		}
+
+		return _getEventDetailsDao().selectData (
+			  selectFields = [
+				  "page.id"
+				, "page.title"
+				, "event_details.start_date"
+				, "event_details.end_date"
+				, "category.label AS category_label"
+				, "GROUP_CONCAT(region.label) AS region_label"
+			  ]
+			, filter  = _filter
+			, filterParams = _filterParams
+			, maxRows = 3
+			, groupBy = "page.title"
+			, orderBy = "page.title ASC"
 		);
 	}
 

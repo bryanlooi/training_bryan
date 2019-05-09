@@ -2,9 +2,6 @@
 	featured_events = args.featuredEvents ?: QueryNew("");
 </cfscript>
 
-<cfdump  var="#args#">
-<cfdump  var="#featured_events#">
-
 <cfoutput>
 	<cfif featured_events.recordcount>
 		<div class="jumbotron">
