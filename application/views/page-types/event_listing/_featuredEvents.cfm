@@ -1,5 +1,5 @@
-<cf_presideparam name="args.id" field="page.id" editable="false" />
-<cf_presideparam name="args.title" field="page.title" editable="false" />
+<!--- <cf_presideparam name="args.id" field="page.id" editable="false" /> --->
+<!--- <cf_presideparam name="args.title" field="page.title" editable="false" /> --->
 
 <cfdump  var="#args#">
 <cfoutput>

@@ -20,11 +20,13 @@ component {
 		);
 	}
 
-	// private function featuredEventsViewlet( event, rc, prc, args={} ) {
-	// 	return renderView(
-	// 		  view = "page-types/event_listing/_featuredEvents"
-	// 		, args = args
-	// 	);
-	// }
+	private function featuredEventsViewlet( event, rc, prc, args={} ) {
+		args.featuredEvents = eventsService.getFeaturedEvents();
+
+		return renderView(
+			  view = "page-types/event_listing/_featuredEventsViewlet"
+			, args = args
+		);
+	}
 
 }

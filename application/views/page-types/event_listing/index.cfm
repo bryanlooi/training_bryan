@@ -22,7 +22,7 @@ args.eventDetails
 
 <cfoutput>
 
-	#renderViewlet( event="page-types.event_listing._featuredEventsViewlet", args = { } )#
+	#renderViewlet( event="page-types.event_listing.featuredEventsViewlet", args = {} )#
 <!--- 					   , args={ eventListingPage=event.getCurrentPageId() } )# --->
 
 	<form name="events-search" action="#event.buildLink()#" method="POST"> 

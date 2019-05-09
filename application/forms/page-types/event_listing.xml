@@ -22,7 +22,7 @@
 	<tab id="event_listing">
 		<fieldset id="event_listing_fieldset">
 			<!-- add / remove / modify fields in the main tab & fieldset here -->
-			<field binding="event_listing.featured_event"/>
+			<field binding="event_listing.featured_events"/>
 			<field binding="event_listing.region"/>
 			<field binding="event_listing.categories"/>
 		</fieldset>
